@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         public void onActivityResult(ActivityResult result) {
 
         }
-    })
+    });
 
 
     private ImageView[] cardViews;
@@ -141,22 +141,27 @@ public class MainActivity extends AppCompatActivity {
         }).start();
     }
 
-    private void removeCards(ImageView firstCard, ImageView secondCard) {
+    private void removeCards(ImageView firstCard, ImageView secondCard)
+    {
         firstCard.setVisibility(View.INVISIBLE);
         secondCard.setVisibility(View.INVISIBLE);
         flippedCardsCount = 0;
         checkGameEnd();
     }
 
-    private void checkGameEnd() {
+    private void checkGameEnd()
+    {
         boolean gameOver = true;
-        for (ImageView cardView : cardViews) {
-            if (cardView.getVisibility() == View.VISIBLE) {
+        for (ImageView cardView : cardViews)
+        {
+            if (cardView.getVisibility() == View.VISIBLE)
+            {
                 gameOver = false;
                 break;
             }
         }
-        if (gameOver) {
+        if (gameOver)
+        {
             Toast.makeText(MainActivity.this, "Congratulations! You won the game!", Toast.LENGTH_LONG).show();
         }
     }

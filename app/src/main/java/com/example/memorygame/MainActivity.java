@@ -32,6 +32,10 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.GoogleAuthProvider;
 
+
+
+
+
 public class MainActivity extends AppCompatActivity {
     FirebaseAuth auth;
     GoogleSignInClient googleSignInClient;
@@ -218,6 +222,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Congratulations! You won the game!", Toast.LENGTH_LONG).show();
         }
     }
+
 
     private void firebaseAuthWithGoogle(String idToken) {
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MemoryGame</string>
     <string name="client_id">750341072752-23eh9o6i321kjmbd4g0000bmmrbmv1n7.apps.googleusercontent.com</string>
+    <string name="default_web_client_id">750341072752-23eh9o6i321kjmbd4g0000bmmrbmv1n7</string>
 </resources>
